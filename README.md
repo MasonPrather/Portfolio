@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @mdawg1sc00l
-- 👀 I’m interested in Computer Game Design & Development, particularly the creation of online multiplayer, FPS, and competitive games.
-- 🌱 I’m currently learning mobile/casual game design, serious/educational game design, and artficial intelligence at KSU.
+- 👋 Hi, I’m Mason Prather
+- 👀 I am interested in game development, particularly the creation of online multiplayer, FPS, XR, and competitive games.
+- 🌱 I am currently in my final semesters at KSU for my B.S. in Computer Game Design & Development, studying XR and FPS development.
 - 💞️ I’m looking to collaborate on any volunteer projects or upcoming indie games.
 - 📫 How to reach me: My personal email is mdawg81400@gmail.com and my school email is mprath10@students.kennesaw.edu
 <!---
