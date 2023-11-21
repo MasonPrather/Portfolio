@@ -11,9 +11,10 @@
 - I’m looking to collaborate on any volunteer projects or upcoming indie games.
 
 ## Skills
-- Game Development: Unity, Unreal Engine
-- Programming Languages: C++, C#
+- Game Development: Unity, Unreal Engine, Godot
+- Programming Languages: C++, C#, Python, Java
 - XR Development: Oculus, HTC Vive
+- Genre Experience: First-Person Shooters, Mobile/Casual, and Puzzle
 
 ## Project Showcase
 - [Project 1](link1): Brief description.
