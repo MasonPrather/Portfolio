@@ -6,6 +6,7 @@
 
 ## Education
 - I am currently in my final semesters at KSU for my B.S. in Computer Game Design & Development, studying XR and FPS development.
+- I am slated to begin my Masters of Science in Software Engineering in Fall 2024.
 
 ## Collaboration
 - I’m looking to collaborate on any volunteer projects or upcoming indie games.
@@ -17,8 +18,7 @@
 - Genre Experience: First-Person Shooters, Mobile/Casual, and Puzzle
 
 ## Project Showcase
-- [Project 1](link1): Brief description.
-- [Project 2](link2): Brief description.
+- [Energy Crisis 1994]([link1](https://github.com/MasonPrather/EC94)): An online multiplayer 4-vs-4 team shooter. Inspired by Overwatch and Team Fortress 2. Features 3 game modes and 12 playable fighters (3 per role).
 
 ## Contact Me
 - How to reach me:
