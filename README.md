@@ -3,6 +3,7 @@
 
 ## Interests
 - I am interested in game development, particularly the creation of online multiplayer, FPS, XR, and competitive games.
+- As a 5-year-participant, I am heavily involved with competitive esports (Overwatch 2) at a collegiate and Tier 3 skill level.
 
 ## Education
 - I am currently in my final semesters at KSU for my B.S. in Computer Game Design & Development, studying XR and FPS development.
