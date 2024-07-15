@@ -25,7 +25,7 @@
 - Schwer: A VR game for HTC vive. Utilized in a KSU research study, this game takes the player on a journey of self-worth and reflection. Navigate puzzles and meet mysterious creatures as you traverse this dull land in search of your purpose.
 - Cyber Attack Escape: A VR game for Meta Quest 2. Hop aboard the ship, it's time to train yourself for the world of cybersecurity. A space game that features 5 distinct minigames all about learning cybersecurity standards and concepts.
 - No Witness: An asymmetrical 3 vs 1 multiplayer horror game. (In Progress)
-- [Project Showcase](https://docs.google.com/presentation/d/1IoeYtVYMXSpC_QjF1-to4H16af-okaV6/edit?usp=drive_link&ouid=106336676086544653365&rtpof=true&sd=true)
+- [List of Works](https://docs.google.com/document/d/1eRs2Emx--UXADss7329RI6TzBe8novJlfhP2RlGkOQc/edit?usp=sharing)
    
 ## Contact Me
 - How to reach me:
