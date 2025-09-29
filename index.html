@@ -118,6 +118,9 @@
     .item .meta-line{font-size:14px; color:var(--muted); margin-bottom:10px}
     .item ul{margin:10px 0 0 18px}
 
+    .responsive-yt{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;}
+    .responsive-yt iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
     .media{
       display:grid; gap:10px; grid-template-columns: repeat(3, 1fr); margin-top:12px
     }
@@ -329,7 +332,14 @@
           </ul>
           <div class="media">
             <div class="ph">Add Screenshot</div>
-            <div class="ph">Add Short Trailer</div>
+            <div class="responsive-yt">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/VIDEO_ID?modestbranding=1&rel=0&iv_load_policy=3"
+                    title="Demo video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
             <div class="ph">Add Repo Link</div>
           </div>
         </article>
