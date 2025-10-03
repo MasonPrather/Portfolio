@@ -129,8 +129,12 @@
     .media{
       display:grid; gap:10px; grid-template-columns: repeat(3, 1fr); margin-top:12px
     }
-    .media .ph{display:flex; align-items:center; justify-content:center; aspect-ratio:16/9; background:linear-gradient(135deg, rgba(34,211,238,.2), rgba(167,139,250,.18)); border:1px dashed var(--border); border-radius:14px; font-size:14px; color:var(--muted)}
-
+    .media .ph{display:flex; align-items:center; justify-content:center; width:var(--media-w,360px); height:var(--media-h,202px); background:linear-gradient(135deg, rgba(34,211,238,.2), rgba(167,139,250,.18)); border:1px dashed var(--border); border-radius:14px; font-size:14px; color:var(--muted); overflow:hidden}
+    /* Ensure embedded media tiles use the exact same size */
+    .media img, .media video{width:var(--media-w,360px); height:var(--media-h,202px); object-fit:cover; display:block; border-radius:14px; border:1px solid var(--border)}
+    @media (max-width: 900px){
+      .media .ph, .media img, .media video{width:100%; height:auto; aspect-ratio:16/9}
+    }
     /* Skills chips */
     .skills{display:flex; flex-wrap:wrap; gap:8px}
 
