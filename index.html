@@ -1,581 +1,758 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mason Prather — Software Engineer & Game Developer</title>
-  <meta name="description" content="Portfolio of Mason Prather — Software Engineer and Game Developer specializing in networking (P4/Tofino), VR/XR, and practical software solutions." />
-  <meta name="author" content="Mason Prather" />
-  <meta property="og:title" content="Mason Prather — Software Engineer & Game Developer" />
-  <meta property="og:description" content="Networking (P4/Tofino), VR/XR, game dev, research. Projects, publications, and experience." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="" />
-  <meta name="theme-color" content="#0f172a" />
-  
-  <!-- JSON-LD (Person) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mason Prather | XR/Game Developer &amp; Software Engineer</title>
+  <meta
+    name="description"
+    content="Portfolio of Mason Prather, an XR/Game Developer and Software Engineer building immersive games, research prototypes, and systems-driven software."
+  >
+  <meta name="author" content="Mason Prather">
+  <meta name="theme-color" content="#f5efe5">
+  <meta property="og:title" content="Mason Prather | XR/Game Developer &amp; Software Engineer">
+  <meta
+    property="og:description"
+    content="XR/game development, immersive research, multiplayer systems, and software engineering work by Mason Prather."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/newpfp2025.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Public+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mason Prather",
-    "jobTitle": "Software Engineer and Game Developer",
-    "email": "mailto:mdawg81400@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Marietta",
-      "addressRegion": "GA",
-      "addressCountry": "US"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/masonprather/",
-      "https://github.com/MasonPrather"
-    ]
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mason Prather",
+      "jobTitle": "XR/Game Developer and Software Engineer",
+      "telephone": "+1-678-680-9744",
+      "email": "mailto:mdawg81400@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Marietta",
+        "addressRegion": "GA",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/masonprather/",
+        "https://github.com/MasonPrather"
+      ]
+    }
   </script>
-
-  <style>
-    :root{
-      --bg: #0b1020;          /* deep slate */
-      --bg-soft:#0e1530;
-      --panel:#0f172a;        /* slate-900 */
-      --text:#e5e7eb;         /* zinc-200 */
-      --muted:#9ca3af;        /* gray-400 */
-      --brand:#22d3ee;        /* cyan-400 */
-      --brand-2:#a78bfa;      /* violet-400 */
-      --accent:#34d399;       /* emerald-400 */
-      --chip:#1f2937;         /* gray-800 */
-      --border:#1f2937;
-      --link:#7dd3fc;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 16px;
-      --radius-sm: 12px;
-      --radius-lg: 28px;
-      --w: min(1150px, 92vw);
-    }
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg:#fafafa; --panel:#ffffff; --text:#0b1020; --muted:#475569; --border:#e5e7eb; --chip:#f1f5f9; --shadow: 0 10px 30px rgba(2,6,23,.08);
-      }
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0; font:16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; background:radial-gradient(1200px 600px at 20% -10%, rgba(34,211,238,.08), transparent 60%), radial-gradient(900px 500px at 90% 0%, rgba(167,139,250,.08), transparent 60%), var(--bg); color:var(--text)}
-    a{color:var(--link); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{width:var(--w); margin-inline:auto}
-
-    /* Header */
-    .skip{position:absolute; left:-999px}
-    .skip:focus{left:12px; top:12px; background:var(--panel); color:var(--text); padding:10px 14px; border-radius:10px; border:1px solid var(--border)}
-    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px); background:linear-gradient(180deg, rgba(11,16,32,.9), rgba(11,16,32,.7)); border-bottom:1px solid rgba(255,255,255,.06)}
-    .nav{display:flex; align-items:center; justify-content:space-between; padding:12px 0}
-    .brand{display:flex; align-items:center; gap:12px}
-    .logo{
-    width:40px; height:40px; border-radius:50%;
-    overflow:hidden; flex:0 0 40px; aspect-ratio:1/1;
-    }
-    .logo img{
-    width:100%; height:100%; object-fit:cover; display:block; max-width:none;
-    }
-    .brand h1{font-size:18px; margin:0}
-    .menu{display:flex; gap:14px; flex-wrap:wrap}
-    .menu a{padding:8px 10px; border-radius:10px}
-    .menu a:hover{background:rgba(255,255,255,.06); text-decoration:none}
-    .cta{display:flex; gap:10px}
-    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--border); border-radius:12px; background:var(--chip); color:var(--text); box-shadow:var(--shadow)}
-    .btn:hover{filter:brightness(1.08); text-decoration:none}
-    .btn.primary{background:linear-gradient(135deg, var(--brand), var(--brand-2)); border:none; color:#0b1020; font-weight:700}
-
-    /* Hero */
-    .hero{padding:56px 0 24px}
-    .hero-grid{display:grid; grid-template-columns: 1.2fr .8fr; gap:28px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
-    .title{font-size:40px; line-height:1.1; margin:0 0 8px}
-    .subtitle{font-size:20px; color:var(--muted); margin:0 0 16px}
-    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0}
-    .chip{background:var(--chip); border:1px solid var(--border); border-radius:999px; padding:6px 10px; font-size:14px}
-    .meta{display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:14px}
-    .meta div{background:var(--chip); border:1px solid var(--border); border-radius:12px; padding:10px}
-    .muted{color:var(--muted)}
-
-    /* Sections */
-    section{padding:28px 0}
-    .section-head{display:flex; justify-content:space-between; align-items:end; margin-bottom:10px}
-    h2{font-size:26px; margin:0}
-    .kicker{color:var(--muted); font-size:14px}
-
-    .grid{display:grid; gap:16px}
-    .grid.cards{grid-template-columns: repeat(12, 1fr)}
-    .col-12{grid-column: span 12}
-    .col-8{grid-column: span 8}
-    .col-6{grid-column: span 6}
-    .col-4{grid-column: span 4}
-    @media (max-width: 900px){
-      .hero-grid{grid-template-columns: 1fr}
-      .grid.cards{grid-template-columns: repeat(6, 1fr)}
-      .col-8{grid-column: span 6}
-      .col-6{grid-column: span 6}
-      .col-4{grid-column: span 6}
-    }
-
-    .item{background:var(--panel); border:1px solid var(--border); border-radius:var(--radius-sm); padding:18px}
-    .item h3{margin:0 0 6px; font-size:18px}
-    .item .meta-line{font-size:14px; color:var(--muted); margin-bottom:10px}
-    .item ul{margin:10px 0 0 18px}
-
-    .responsive-yt{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;}
-    .responsive-yt iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-
-    .media{
-      display:grid; gap:10px; grid-template-columns: repeat(3, 1fr); margin-top:12px
-    }
-    .media .ph{display:flex; align-items:center; justify-content:center; width:var(--media-w,360px); height:var(--media-h,202px); background:linear-gradient(135deg, rgba(34,211,238,.2), rgba(167,139,250,.18)); border:1px dashed var(--border); border-radius:14px; font-size:14px; color:var(--muted); overflow:hidden}
-    /* Ensure embedded media tiles use the exact same size */
-    .media img, .media video{width:var(--media-w,360px); height:var(--media-h,202px); object-fit:cover; display:block; border-radius:14px; border:1px solid var(--border)}
-    @media (max-width: 900px){
-      .media .ph, .media img, .media video{width:100%; height:auto; aspect-ratio:16/9}
-    }
-    /* Skills chips */
-    .skills{display:flex; flex-wrap:wrap; gap:8px}
-
-    /* Footer */
-    footer{padding:28px 0 60px; color:var(--muted)}
-    .small{font-size:13px}
-  </style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header>
-    <div class="wrap nav">
-      <div class="brand">
-        <div class="logo">
-            <img src="./images/newpfp2025.png" alt="Mason Prather headshot">
-        </div>
-        <h1>Mason Prather</h1>
-      </div>
-      <nav class="menu" aria-label="Primary">
-        <a href="#about">About</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="shell nav-shell">
+      <a class="brand" href="#top" aria-label="Mason Prather home">
+        <span class="brand-mark" aria-hidden="true">MP</span>
+        <span class="brand-text">
+          <strong>Mason Prather</strong>
+          <span>XR/Game Developer</span>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        data-nav-toggle
+      >
+        Menu
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#selected-work">Work</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>        
-        <a href="#education">Education</a>
-        <a href="#awards">Awards</a>
+        <a href="#current-projects">Current</a>
+        <a href="#project-archive">Projects</a>
+        <a href="#publications">Research</a>
         <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div class="cta">
-        <a class="btn" href="https://github.com/MasonPrather" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn primary" href="https://www.linkedin.com/in/masonprather/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
     </div>
   </header>
 
-  <main id="main" class="wrap">
-    <!-- Hero / About -->
-    <section id="about" class="hero">
-      <div class="hero-grid">
-        <div class="card">
-          <h2 class="title">Software Engineer & VR-Ready Game Developer</h2>
-          <p class="subtitle">Networking (P4/Tofino), VR/XR, and practical software solutions.</p>
-          <p>Master of Science candidate in Software Engineering (<span class="muted">B.S. in Computer Game Design & Development</span>) at Kennesaw State University. I build across VR/XR game development, network engineering (private 5G IDS), research tooling, and production-ready software.</p>
-          <div class="chips">
-            <span class="chip">Unity • Unreal • Godot</span>
-            <span class="chip">Meta XR • OpenXR</span>
-            <span class="chip">P4_16 • Intel Tofino</span>
-            <span class="chip">InfluxDB • Grafana</span>
-            <span class="chip">Python • C# • C++ • C</span>
+  <main id="main">
+    <section class="hero section">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">XR/Game Developer first. Software engineer with research and systems depth.</p>
+          <h1>Building immersive experiences that feel thoughtful, playable, and technically solid.</h1>
+          <p class="hero-lead">
+            I'm Mason Prather, an XR/game developer and software engineer working across VR experiences,
+            multiplayer design, research prototypes, and production software. My work spans therapeutic VR,
+            attention-training research, multiplayer shooters, and even private 5G security systems.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="documents/Mason Prather Resume.pdf" target="_blank" rel="noopener">
+              Open Resume
+            </a>
+            <a class="button button-secondary" href="https://github.com/MasonPrather" target="_blank" rel="noopener">
+              GitHub
+            </a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/masonprather/" target="_blank" rel="noopener">
+              LinkedIn
+            </a>
           </div>
-          <div class="meta">
-            <div><strong>Location</strong><br/>Marietta, GA, USA</div>
-            <div><strong>Availability</strong><br/><span class="muted">Open to opportunities</span></div>
-            <div><strong>Email</strong><br/><a href="mailto:mdawg81400@gmail.com">mdawg81400@gmail.com</a></div>
-            <div><strong>Academic Email</strong><br/><a href="mailto:mprath10@students.kennesaw.edu">mprath10@students.kennesaw.edu</a></div>
-            <div><strong>Phone</strong><br/><a></a>+1 (678) 680-9744</a></div>
-          </div>
-        </div>
-        <aside class="card">
-          <h3 style="margin-top:4px">Quick Links</h3>
-          <ul>
-            <li><a href="#projects">Featured Projects</a></li>
-            <li><a href="#research">Publications & Research</a></li>
-            <li><a href="#experience">Experience Highlights</a></li>
-            <li><a href="#education">Education</a></li>
+
+          <ul class="proof-strip" aria-label="Highlights">
+            <li>Research Engineer at OPEX Systems</li>
+            <li>Graduate XR Research at Kennesaw State</li>
+            <li>IEEE VRW 2025 publication</li>
+            <li>C-Day 2022 1st Place capstone award</li>
           </ul>
-          <hr style="border:0;border-top:1px solid var(--border); margin:14px 0"/>
-          <h3>Media Placeholders</h3>
-          <p class="muted small">Drop in screenshots, demo videos, and code snippets. Replace placeholders below by editing <code>src</code> or links.</p>
-          <div class="media">
-            <div class="ph">Add Photo</div>
-            <div class="ph">Add Demo Video</div>
-            <div class="ph">Add Code Snippet</div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Profile summary">
+          <!-- VISUAL_NOTE: If you replace the headshot, use a clean portrait with soft contrast and a neutral background. A 4:5 crop works best here. -->
+          <figure class="portrait-card">
+            <img
+              src="images/newpfp2025.png"
+              alt="Portrait of Mason Prather"
+              loading="eager"
+            >
+          </figure>
+
+          <div class="signal-card">
+            <p class="panel-label">Current Focus</p>
+            <ul class="signal-list">
+              <li>Therapeutic VR with expressive avatars</li>
+              <li>VR classroom research and attention tooling</li>
+              <li>Game prototypes with horror and multiplayer roots</li>
+            </ul>
+          </div>
+
+          <div class="signal-card compact">
+            <p class="panel-label">Based In</p>
+            <p>Marietta, Georgia</p>
+            <p class="panel-label">Contact</p>
+            <a href="mailto:mdawg81400@gmail.com">mdawg81400@gmail.com</a>
+            <a href="tel:+16786809744">+1 (678) 680-9744</a>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience">
-      <div class="section-head">
-        <h2>Experience</h2>
-        <span class="kicker">Recent roles & impact</span>
-      </div>
-      <div class="grid cards">
-        <article class="item col-12">
-          <h3>Research Engineer — OPEX Systems</h3>
-          <div class="meta-line">2024 – Present · Marietta, GA · Networking, Telecommunications, & 5G Security</div>
-          <ul>
-            <li>Built a private <strong>5G network IDS</strong> pipeline: P4_16 on Intel Tofino (Edgecore Wedge100BF-32X), Python control plane, <strong>InfluxDB + Grafana</strong> dashboards.</li>
-            <li>Implemented real-time flow ingestion (IAT, byte/packet counts, TCP/ICMP flags), <strong>PCAP reconstruction</strong> via Scapy, and <strong>GeoLite2</strong> enrichment.</li>
-            <li>Integrated <strong>Planter</strong> / NetML models (Random Forest & Isolation Forest) for on-switch inference design; designed <strong>whitelist management UI</strong> and sockets-based command layer.</li>
-            <li>Developed <strong>SCTP/NGAP/GTP-U</strong> deep parsing for 5G historical storage and analysis.</li>
-          </ul>
-          <div class="media">
-            <div class="img">
-                <img src="./images/opex_va.JPG" alt="Mason Prather headshot">
-            </div>
-            <div class="ph">Add Dashboard Screenshot</div>
-            <div class="ph">Add Demo Link</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>Graduate Research Assistant / XR Developer — Kennesaw State University</h3>
-          <div class="meta-line">Aug 2024 – Present · Kennesaw, GA · VR Classroom & Studies</div>
-          <ul>
-            <li><strong>Wind Phone Therapy</strong>: Unity 6.2 + Meta XR SDK + Ready Player Me avatars; expressive avatars in a multi-user VR game. Using VR to provide therapy to bereaved individuals dealing with loss.</li>
-            <!-- <li><strong>VR Classroom (Thesis)</strong>: Unreal Engine 5.4.4 + Meta XR SDK + Reallusion avatars; attention monitoring with <strong>eye-tracking</strong>, <strong>EmotiBit</strong> physiology, and <strong>quiz-based interventions</strong>.</li>
-            <li>Led IRB materials, instrumentation pipeline, and in-VR assessment UX; prepared study protocols and analysis plan.</li> -->
-          </ul>
-          <div class="media">
-            <div class="ph">Add UE 5.4 Screenshot</div>
-            <div class="ph">Add Study Diagram</div>
-            <div class="ph">Add Demo Video</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>Undergraduate Research Assistant / XR Developer — Realities Lab, KSU</h3>
-          <div class="meta-line">Apr 2022 – May 2024 · Kennesaw, GA · Unity VR Development</div>
-          <ul>
-            <li>Built multiple <strong>Unity VR</strong> applications for research studies (gameplay scripting, UI, input, QA).</li>
-            <li>Published projects include: <em>Eye Tracking Attention Training</em>, <em>Schwer</em>, <em>Cyber Attack Escape</em> (roles: lead developer on several).</li>
-          </ul>
-          <div class="media">
-            <div class="ph">Add Project Photo</div>
-            <div class="ph">Add Video</div>
-            <div class="ph">Add Links</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>Project Manager — Game Development Courses (5x) — KSU</h3>
-          <div class="meta-line">2021 – 2024 · Course-led teams</div>
-          <ul>
-            <li>Scoped milestones, assigned tasks, and shipped classroom game projects; coached peers on version control, playtesting, and polish.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <span class="kicker">Professional, academic, and hobby</span>
-      </div>
-      <div class="grid cards">
-        <article class="item col-12">
-          <h3>CIREN‑5G Network IDS (OPEX)</h3>
-          <div class="meta-line">P4 + Python + InfluxDB/Grafana</div>
-          <ul>
-            <li>Private 5G anomaly detection using <strong>Tofino P4 data‑plane</strong>, threaded Python control‑plane, <strong>Planter/NetML</strong> integration, PCAP reconstruction, and dashboards.</li>
-            <li>Includes BeagleBone traffic testbed (normal vs. port‑scan), whitelist UI, and structured RFC3339 timestamping.</li>
-          </ul>
-          <div class="media">
-            <div class="ph">Add Topology Image</div>
-            <div class="ph">Add Live Dashboard GIF</div>
-            <div class="ph">Add Code Snippet</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>VR Classroom — Attention Monitoring & Interventions</h3>
-          <div class="meta-line">Unreal 5.4.4 · Meta XR · Reallusion</div>
-          <ul>
-            <li>Tracks gaze (fixations/saccades), computes attention metrics, triggers <strong>quiz interventions</strong>, and logs outcomes; supports Meta Quest Pro eye/face.</li>
-          </ul>
-          <div class="media">
-            <div class="ph">Add Class Scene</div>
-            <div class="ph">Add Attention Graph</div>
-            <div class="ph">Add Paper Link</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>Therapeutic VR with Expressive Avatars (KSU, Zhang Lab)</h3>
-          <div class="meta-line">Unity · Meta Quest Pro</div>
-          <ul>
-            <li>Real-time facial tracking/animation, gesture systems, and supportive interactions for therapeutic contexts.</li>
-          </ul>
-          <div class="media">
-            <div class="ph">Add Avatar Image</div>
-            <div class="ph">Add Demo Clip</div>
-            <div class="ph">Add Tech Notes</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>Energy Crisis 1994 (Capstone)</h3>
-          <div class="meta-line">Solo 4v4 online FPS</div>
-          <ul>
-            <li>Concept, design, 3D modeling, animation, scripting, and balance; peer‑to‑peer playable; reached ~76% of planned milestones.</li>
-          </ul>
-          <div class="media">
-            <div class="ph">Add Screenshots</div>
-            <div class="ph">Add Gameplay Clip</div>
-            <div class="ph">Add Code Snippet</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>A Wake in the Dark (Godot 4.3)</h3>
-          <div class="meta-line">Point‑and‑click mystery</div>
-          <ul>
-            <li>Puzzle design, inspectable inventory items, multi-room progression (Captain’s Cabin, Hallway, etc.).</li>
-          </ul>
-          <div class="media">
-            <div class="ph">Add Screenshot</div>
-            <div class="responsive-yt">
-                <iframe
-                    src="https://www.youtube-nocookie.com/embed/0MHetVxS_8E?modestbranding=1&rel=0&iv_load_policy=3"
-                    title="Demo video"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="ph">Add Repo Link</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>The 13th Floor (Unity 6)</h3>
-          <div class="meta-line">Exploration prototype</div>
-          <ul>
-            <li>Procedural hallways/rooms, survival loops, escape objective; aesthetic over jump‑scare.</li>
-          </ul>
-          <div class="media">
-            <div class="ph">Add Screenshot</div>
-            <div class="ph">Add Prototype Video</div>
-            <div class="ph">Add Repo</div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Research & Publications -->
-    <section id="research">
-      <div class="section-head">
-        <h2>Research & Publications</h2>
-        <span class="kicker">Papers, preprints, and talks</span>
-      </div>
-      <div class="grid cards">
-        <article class="item col-12">
-          <h3>Scooter Coin (VR) → ISMAR 2025</h3>
-          <div class="meta-line">Study design, implementation, analysis</div>
-          <ul>
-            <li>Adapted a VR project into a research study; authored and published results.</li>
-          </ul>
-          <div class="media">
-            <div class="ph">Add PDF</div>
-            <div class="ph">Add Slides</div>
-            <div class="ph">Add Video</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>Evolving Creativity: ML‑Driven Procedural Content Generation in Modern Game Engines</h3>
-          <div class="meta-line">SWE 6753 · GANs/RL for PCG</div>
-          <div class="media">
-            <div class="ph">Add Preprint</div>
-            <div class="ph">Add BibTeX</div>
-            <div class="ph">Add Figures</div>
-          </div>
-        </article>
-
-        <article class="item col-12">
-          <h3>Thesis (in progress): VR lecture attention & quiz interventions</h3>
-          <div class="meta-line">UE 5.4.4 · Meta XR · EmotiBit</div>
-          <div class="media">
-            <div class="ph">Add Overview</div>
-            <div class="ph">Add IRB Summary</div>
-            <div class="ph">Add Planned Experiments</div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-      <div class="section-head">
-        <h2>Education</h2>
-        <span class="kicker">Less is more, details where it counts</span>
-      </div>
-      <div class="grid cards">
-        <article class="item col-12">
-          <h3>M.S. in Software Engineering — Kennesaw State University</h3>
-          <div class="meta-line">Aug 2024 – May 2026 · Marietta, GA</div>
-          <ul>
-            <li><strong>Thesis</strong>: VR lecture attention monitoring with quiz interventions (UE 5.4.4, Meta XR, EmotiBit).</li>
-            <li><strong>Notables</strong>: Dean’s List (Fall 2024)</li>
-          </ul>
-        </article>
-        <article class="item col-12">
-          <h3>B.S. in Computer Game Design & Development — Kennesaw State University</h3>
-          <div class="meta-line">Aug 2018 – May 2024 · Marietta, GA</div>
-          <ul>
-            <li><strong>Relevant Coursework</strong>: Game Design Studio; Application Extensions & Scripting; Artificial Intelligence; Data Structures; Calculus; Immersive Game Analysis & Development (XR).</li>
-            <li><strong>Capstone / Projects</strong>: <em>Energy Crisis 1994</em> (4v4 online FPS); <em>Scooter Coin</em> (VR) → research paper (2023).</li>
-            <li><strong>Honors</strong>: C‑Day 2022 — 1st Place; Dean’s List (Spring 2022)</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- Awards -->
-    <section id="awards">
-      <div class="section-head">
-        <h2>Awards & Honors</h2>
-        <span class="kicker">Recognition</span>
-      </div>
-      <div class="grid cards">
-        <article class="item col-6">
-          <h3>C‑Day 2022 — 1st Place (Undergraduate Capstone)</h3>
-        </article>
-        <article class="item col-6">
-          <h3>Dean’s List — Spring 2022, Fall 2024</h3>
-        </article>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-      <div class="section-head">
-        <h2>Certifications & Skills</h2>
-        <span class="kicker">Tight, scannable list</span>
-      </div>
-      <div class="item">
-        <div class="skills">
-          <span class="chip">C</span>
-          <span class="chip">C#</span>
-          <span class="chip">C++</span>
-          <span class="chip">Python</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">HTML5</span>
-          <span class="chip">GDScript</span>
-          <span class="chip">Rust</span>
-          <span class="chip">SQL</span>
-          <span class="chip">CSS</span>
-          <span class="chip">P4_16</span>
-          <span class="chip">Unity</span>
-          <span class="chip">Unreal Engine 5</span>
-          <span class="chip">Godot 4</span>
-          <span class="chip">Meta XR / OpenXR</span>
-          <span class="chip">Final IK</span>
-          <span class="chip">Vivox</span>
-          <span class="chip">InfluxDB</span>
-          <span class="chip">Grafana</span>
-          <span class="chip">Scapy</span>
-          <span class="chip">NetML</span>
-          <span class="chip">GeoLite2</span>
-          <span class="chip">Core ML</span>
-          <span class="chip">Vision</span>
-          <span class="chip">Blender</span>
-          <span class="chip">GIMP</span>
-          <span class="chip">FL Studio</span>
-          <span class="chip">Git/GitHub</span>
-          <span class="chip">Unity Relay / NGO / UTP</span>
-          <span class="chip">Ready Player Me</span>
-          <span class="chip">Meta Movement</span>
-          <span class="chip">OVR SDK</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Events -->
-    <section id="events">
-      <div class="section-head">
-        <h2>Events & Presentations</h2>
-        <span class="kicker">Talks, demos, and festivals</span>
-      </div>
-      <div class="grid cards">
-        <article class="item col-12">
-          <h3>Atlanta Science Festival 2024</h3>
-          <div class="meta-line">Presented XR/VR projects (KSU)</div>
-          <div class="media">
-            <div class="ph">Add Slides</div>
-            <div class="ph">Add Photos</div>
-            <div class="ph">Add Demo</div>
-          </div>
-        </article>
-        <article class="item col-12">
-          <h3>KSU C‑Day 2022</h3>
-          <div class="meta-line">Presented capstone (Energy Crisis 1994)</div>
-          <div class="media">
-            <div class="ph">Add Poster</div>
-            <div class="ph">Add Demo</div>
-            <div class="ph">Add Photos</div>
-          </div>
-        </article>
-        <article class="item col-12">
-          <h3>VR Classroom 10‑min Lecture Demo (May 2025)</h3>
-          <div class="meta-line">Automated slideshow + avatar lip‑sync in VR classroom</div>
-          <div class="media">
-            <div class="ph">Add Video</div>
-            <div class="ph">Add Slides</div>
-            <div class="ph">Add Notes</div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="section-head">
-        <h2>Contact</h2>
-        <span class="kicker">Let’s build something great</span>
-      </div>
-      <div class="grid cards">
-        <div class="item col-6">
-          <h3>Email</h3>
-          <p><a href="mailto:mdawg81400@gmail.com">mdawg81400@gmail.com</a><br/>
-             <span class="muted">Academic:</span> <a href="mailto:mprath10@students.kennesaw.edu">mprath10@students.kennesaw.edu</a>
-          </p>
-          <h3>Links</h3>
+    <section class="section" id="selected-work">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Selected Work</p>
+          <h2>The projects that best explain how I think and build.</h2>
           <p>
-            <a href="https://www.linkedin.com/in/masonprather/" target="_blank" rel="noopener">LinkedIn</a> ·
-            <a href="https://github.com/MasonPrather" target="_blank" rel="noopener">GitHub</a>
+            These are the strongest examples of my range: immersive experience design, research-driven XR
+            development, and systems work that proves I can go deep when the problem demands it.
           </p>
         </div>
-        <div class="item col-6">
-          <h3>Resume</h3>
-          <p class="muted">Provide a PDF resume and link it here.</p>
-          <div class="media">
-            <div class="ph">Add Resume PDF</div>
+
+        <div class="selected-grid">
+          <article class="feature-card feature-card-large reveal">
+            <div class="feature-header">
+              <p class="feature-tag">Flagship XR Work</p>
+              <span class="status-pill">In Progress</span>
+            </div>
+            <h3>Wind Phone Therapy</h3>
+            <p>
+              Building a multi-user therapeutic VR experience that uses expressive avatars and social presence to
+              support bereaved individuals. The challenge is not just making it functional, but making it feel
+              human, emotionally legible, and respectful of the setting.
+            </p>
+            <ul class="feature-points">
+              <li>Developed in Unity 6.2 with Meta XR SDK and Ready Player Me integration.</li>
+              <li>Focused on expressive avatar behavior, presence, and interaction quality.</li>
+              <li>Represents the kind of XR work I want to keep pushing forward.</li>
+            </ul>
+            <div class="stack-list">
+              <span>Unity 6.2</span>
+              <span>Meta XR</span>
+              <span>Ready Player Me</span>
+              <span>VR Interaction Design</span>
+            </div>
+            <!-- VISUAL_NOTE: Add a 16:9 still or short loop showing expressive avatar interaction. Best shot: two users in-scene with readable body language. -->
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-header">
+              <p class="feature-tag">Systems Crossover</p>
+              <span class="status-pill muted">Professional</span>
+            </div>
+            <h3>CIREN-5G Network IDS</h3>
+            <p>
+              At OPEX Systems, I helped build a private 5G intrusion detection pipeline using P4 on Intel Tofino,
+              Python control-plane tooling, and InfluxDB/Grafana for visibility. It is the clearest example of my
+              software engineering depth outside games and XR.
+            </p>
+            <div class="stack-list">
+              <span>P4_16</span>
+              <span>Python</span>
+              <span>InfluxDB</span>
+              <span>Grafana</span>
+            </div>
+            <!-- VISUAL_NOTE: Add a topology diagram or dashboard screenshot. A split layout with packet flow on one side and Grafana panels on the other would work well. -->
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-header">
+              <p class="feature-tag">Game Design Range</p>
+              <span class="status-pill muted">Capstone</span>
+            </div>
+            <h3>Energy Crisis 1994</h3>
+            <p>
+              A 4v4 hero-shooter capstone inspired by team-based multiplayer design. I handled concepting,
+              implementation, content creation, and systems balance, pushing the project into a playable state
+              while wearing both designer and engineer hats.
+            </p>
+            <div class="stack-list">
+              <span>Gameplay Systems</span>
+              <span>Multiplayer Design</span>
+              <span>3D Content</span>
+              <span>Rapid Iteration</span>
+            </div>
+            <a class="text-link" href="https://github.com/MasonPrather/EC94" target="_blank" rel="noopener">
+              View Repository
+            </a>
+            <!-- VISUAL_NOTE: Add a gameplay still with HUD readability and character silhouettes visible. A roster panel or objective mode screen could also work. -->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="shell about-grid">
+        <div class="reveal">
+          <div class="section-heading">
+            <p class="section-kicker">About Me</p>
+            <h2>I like building things that people can feel, play, and remember.</h2>
           </div>
+          <p class="body-copy">
+            My background started in game development, but it quickly expanded into XR research, technical
+            prototyping, and systems-focused engineering. I'm most energized by work that blends interaction,
+            experimentation, and polish, especially when the end result has to be both technically credible and
+            genuinely engaging for a player or participant.
+          </p>
+          <p class="body-copy">
+            At Kennesaw State University, I've worked on VR research projects ranging from classroom attention
+            studies to therapeutic applications. Outside the lab, I've led project teams, built horror and
+            multiplayer concepts, and contributed to production systems work that sharpened how I think about
+            software quality, observability, and infrastructure.
+          </p>
+        </div>
+
+        <div class="strengths reveal">
+          <article class="strength-card">
+            <p class="panel-label">What Defines My Work</p>
+            <h3>Immersion with intent</h3>
+            <p>I care about interaction design, emotional tone, player feel, and why an experience should exist.</p>
+          </article>
+          <article class="strength-card">
+            <h3>Engineer's discipline</h3>
+            <p>I bring systems thinking, technical range, and implementation rigor to creative work.</p>
+          </article>
+          <article class="strength-card">
+            <h3>Leadership in small teams</h3>
+            <p>I've scoped work, managed classmates and collaborators, and helped teams ship cleaner projects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Work Experience</p>
+          <h2>Research, production systems, and hands-on development.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p>2024 - Present</p>
+              <span>Marietta, GA</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Research Engineer | OPEX Systems</h3>
+              <p>
+                Building software and data-path tooling for a private 5G IDS pipeline, with work spanning packet
+                parsing, control-plane integration, telemetry, and anomaly-detection support.
+              </p>
+              <ul>
+                <li>Implemented real-time ingestion and packet reconstruction tooling using Python and Scapy.</li>
+                <li>Built visibility layers with InfluxDB and Grafana to make network behavior explainable.</li>
+                <li>Worked with P4_16 on Intel Tofino hardware and 5G protocol parsing across SCTP, NGAP, and GTP-U.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p>Aug 2024 - Present</p>
+              <span>Kennesaw, GA</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Graduate Research Assistant / XR Developer | Kennesaw State University</h3>
+              <p>
+                Developing XR experiences for research settings, with an emphasis on presence, avatar expression,
+                and experimental design that feels usable inside VR instead of bolted onto it.
+              </p>
+              <ul>
+                <li>Developing Wind Phone Therapy in Unity with Meta XR and expressive avatar systems.</li>
+                <li>Supporting research-oriented VR prototyping and interaction design.</li>
+                <li>Balancing technical implementation with study goals, participant experience, and iteration speed.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p>Apr 2022 - May 2024</p>
+              <span>Kennesaw, GA</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Undergraduate Research Assistant / XR Developer | Realities Lab, KSU</h3>
+              <p>
+                Built multiple Unity VR applications for academic studies, contributing across gameplay scripting,
+                UI, input, testing, and research-facing iteration.
+              </p>
+              <ul>
+                <li>Worked on Eye Tracking Attention Training, Schwer, and Cyber Attack Escape.</li>
+                <li>Helped shape XR experiences used in actual research contexts rather than classroom demos alone.</li>
+                <li>Gained deep experience translating study requirements into usable VR interactions.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p>2021 - 2024</p>
+              <span>KSU Course Teams</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Project Manager | Game Development Courses</h3>
+              <p>
+                Led multiple student teams through milestone planning, scope management, and production polish for
+                classroom game projects.
+              </p>
+              <ul>
+                <li>Assigned work, tracked progress, and kept teams focused on shipping the strongest version possible.</li>
+                <li>Helped peers improve their workflow around version control, playtesting, and finishing touches.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="current-projects">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Current Projects</p>
+          <h2>What I'm actively building right now.</h2>
+          <p>These are the projects that currently define where my attention and curiosity are going.</p>
+        </div>
+
+        <div class="card-grid three-up">
+          <article class="project-card reveal">
+            <div class="project-card-head">
+              <h3>Wind Phone Therapy</h3>
+              <span class="status-pill">Active</span>
+            </div>
+            <p>
+              A therapeutic VR experience centered on human connection, expressive avatars, and emotionally readable
+              interaction.
+            </p>
+            <p class="project-meta">Unity 6.2 | Meta XR | Ready Player Me</p>
+            <!-- VISUAL_NOTE: Consider a calm scene screenshot instead of UI-heavy imagery. This project benefits from atmosphere and character presence. -->
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-head">
+              <h3>VR Classroom Thesis</h3>
+              <span class="status-pill">Research</span>
+            </div>
+            <p>
+              An Unreal Engine classroom environment focused on attention monitoring, eye-tracking, and quiz-based
+              interventions inside VR.
+            </p>
+            <p class="project-meta">Unreal Engine 5.4.4 | Meta XR | EmotiBit</p>
+            <!-- VISUAL_NOTE: Add one classroom scene and one supporting graph or telemetry visual to balance immersion with research credibility. -->
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-head">
+              <h3>The 13th Floor</h3>
+              <span class="status-pill">Prototype</span>
+            </div>
+            <p>
+              A horror exploration prototype centered on procedural hallway generation, environmental tension, and a
+              slower, more atmospheric kind of dread.
+            </p>
+            <p class="project-meta">Unity 6 | Horror Design | Systems Prototyping</p>
+            <!-- VISUAL_NOTE: Use a moody corridor screenshot with a strong vanishing point. Keep UI out of the frame if possible. -->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="project-archive">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Project Archive</p>
+          <h2>Completed work, research builds, and experiments worth showing.</h2>
+        </div>
+
+        <div class="card-grid archive-grid">
+          <article class="archive-card reveal">
+            <h3>Energy Crisis 1994</h3>
+            <p>A team-shooter capstone inspired by Overwatch and Team Fortress 2, built around role clarity and match flow.</p>
+            <p class="project-meta">Hero Shooter | Multiplayer Design</p>
+            <a class="text-link" href="https://github.com/MasonPrather/EC94" target="_blank" rel="noopener">Repository</a>
+          </article>
+
+          <article class="archive-card reveal">
+            <h3>Scooter Coin</h3>
+            <p>A VR arcade experience where posture directly influences play, later adapted into a published research effort.</p>
+            <p class="project-meta">Unity VR | HTC Vive | Quest 2</p>
+          </article>
+
+          <article class="archive-card reveal">
+            <h3>Eye Tracking Attention Training</h3>
+            <p>A classroom-focused VR research application that used HTC Vive Pro Eye tracking for attention-training studies.</p>
+            <p class="project-meta">Unity VR | Eye Tracking | Research</p>
+          </article>
+
+          <article class="archive-card reveal">
+            <h3>Cyber Attack Escape</h3>
+            <p>A VR cybersecurity training experience built around five mini-games that teach core standards and concepts.</p>
+            <p class="project-meta">Meta Quest 2 | Educational VR</p>
+          </article>
+
+          <article class="archive-card reveal">
+            <h3>Schwer</h3>
+            <p>A reflective VR game built for research use, focused on puzzles, mood, and a journey through self-worth and purpose.</p>
+            <p class="project-meta">Unity VR | Narrative Atmosphere</p>
+          </article>
+
+          <article class="archive-card reveal">
+            <h3>A Wake in the Dark</h3>
+            <p>A point-and-click mystery in Godot featuring inspectable inventory items, puzzle progression, and room-based storytelling.</p>
+            <p class="project-meta">Godot 4.3 | Adventure Puzzle</p>
+            <a class="text-link" href="https://www.youtube.com/watch?v=0MHetVxS_8E" target="_blank" rel="noopener">Watch Demo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Skills</p>
+          <h2>A technical stack shaped by game development, XR, and software systems work.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <h3>Game Development</h3>
+            <ul>
+              <li>Unity</li>
+              <li>Unreal Engine 5</li>
+              <li>Godot 4</li>
+              <li>Gameplay systems</li>
+              <li>Multiplayer design</li>
+              <li>Prototyping and iteration</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>XR and Immersive Tech</h3>
+            <ul>
+              <li>Meta XR</li>
+              <li>OpenXR</li>
+              <li>Meta Quest 2 and Pro</li>
+              <li>HTC Vive / Vive Pro Eye</li>
+              <li>Eye tracking workflows</li>
+              <li>Avatar systems and VR UX</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Languages</h3>
+            <ul>
+              <li>C#</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>C</li>
+              <li>Java</li>
+              <li>Rust</li>
+              <li>SQL</li>
+              <li>JavaScript / HTML / CSS</li>
+              <li>P4_16</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Systems and Research Tools</h3>
+            <ul>
+              <li>InfluxDB</li>
+              <li>Grafana</li>
+              <li>Scapy</li>
+              <li>NetML</li>
+              <li>GeoLite2</li>
+              <li>Git and GitHub</li>
+              <li>Blender</li>
+              <li>GIMP</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Research Output</p>
+          <h2>Published work, conference posters, and research-facing presentations.</h2>
+          <p>
+            My research record currently includes one verified IEEE publication, one IEEE VR 2026 poster project
+            with public proceedings details still pending, and C-Day posters that document earlier XR and game
+            development work.
+          </p>
+        </div>
+
+        <article class="publication-card reveal">
+          <div class="publication-header">
+            <div>
+              <p class="feature-tag">Published Paper</p>
+              <h3>Saving the Polar Bears: A Collaborative VR Storytelling Experience Enhanced by Multi-scale and Multi-view WiM Designs</h3>
+            </div>
+            <span class="status-pill">2025</span>
+          </div>
+
+          <p class="citation-line">
+            Lei Zhang, Mason Prather, Devon Haynes, Feiyu Lu, Ying Chen, Joy Li |
+            Proceedings of the 2025 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW 2025), pp. 1546-1547
+          </p>
+
+          <p class="publication-summary">
+            Co-authored a VRW 2025 paper presenting a collaborative VR storytelling experience about Arctic sea ice
+            loss and climate engineering. The project combines an educational rescue narrative with gameplay and
+            adaptive world-in-miniature interfaces, showing how VR can make large-scale environmental systems more
+            understandable through navigation, interaction, and cause-and-effect visualization.
+          </p>
+
+          <ul class="feature-points">
+            <li>Published in IEEE VRW 2025 as a conference/workshop paper.</li>
+            <li>Focused on collaborative XR storytelling, environmental education, and 3D UI design.</li>
+            <li>Demonstrates research-oriented experience beyond game production alone.</li>
+          </ul>
+
+          <div class="publication-links">
+            <a class="text-link" href="https://ieeexplore.ieee.org/abstract/document/10972507" target="_blank" rel="noopener">
+              IEEE Xplore
+            </a>
+            <a class="text-link" href="https://doi.org/10.1109/VRW66409.2025.00418" target="_blank" rel="noopener">
+              DOI
+            </a>
+            <a class="text-link" href="https://dblp.org/rec/conf/vr/ZhangPHLCL25" target="_blank" rel="noopener">
+              dblp
+            </a>
+          </div>
+        </article>
+
+        <div class="research-subsection reveal">
+          <p class="feature-tag">Poster And Presentation Work</p>
+        </div>
+
+        <div class="card-grid two-up">
+          <article class="publication-card reveal">
+            <div class="publication-header">
+              <div>
+                <p class="feature-tag">Conference Poster</p>
+                <h3>Beyond Slices: A Narrative-Driven, Multi-User, Multi-Modal Virtual Reality System for Medical Imaging Presentation (ID: 7181)</h3>
+              </div>
+              <span class="status-pill pending">Pending</span>
+            </div>
+
+            <p class="citation-line">
+              IEEE VR 2026 poster work | Public proceedings details still pending as of April 21, 2026
+            </p>
+
+            <p class="publication-summary">
+              A research poster centered on presenting medical imaging in VR through narrative structure, multi-user
+              collaboration, and multiple modes of interaction rather than relying only on conventional slice-based
+              viewing. It reflects my interest in making technically dense information more understandable through
+              immersive presentation design.
+            </p>
+
+            <ul class="feature-points">
+              <li>Positions medical imaging presentation as a collaborative immersive experience.</li>
+              <li>Explores narrative framing and multi-modal explanation inside VR.</li>
+              <li>Listed here as active conference poster work while final publication details are still pending.</li>
+            </ul>
+
+            <div class="publication-links">
+              <a class="text-link" href="https://ieeevr.org/2026/program/posters/" target="_blank" rel="noopener">
+                IEEE VR 2026 Posters
+              </a>
+            </div>
+          </article>
+
+          <article class="publication-card reveal">
+            <div class="publication-header">
+              <div>
+                <p class="feature-tag">C-Day Poster</p>
+                <h3>UC-152 Posture Change in Immersive Experiences Using a Wearable Chair</h3>
+              </div>
+              <span class="status-pill muted">2022</span>
+            </div>
+
+            <p class="citation-line">
+              Mason T. Prather, Daniel Bodien | Kennesaw State University C-Day Computing Showcase | April 28, 2022
+            </p>
+
+            <p class="publication-summary">
+              A poster project focused on detecting sitting and standing posture changes in immersive experiences
+              through a wearable chair setup. The work framed posture change as a natural in-world trigger that could
+              make actions like entering a vehicle or changing player state feel more physical and intuitive in VR.
+            </p>
+
+            <ul class="feature-points">
+              <li>Centered on posture-aware interaction in immersive systems.</li>
+              <li>Connected physical state changes to more natural experience transitions.</li>
+              <li>Represents early XR research that later informed my broader immersive work.</li>
+            </ul>
+
+            <div class="publication-links">
+              <a class="text-link" href="https://digitalcommons.kennesaw.edu/cday/Spring_2022/Undergraduate_Capstone/1/" target="_blank" rel="noopener">
+                Abstract Page
+              </a>
+              <a class="text-link" href="https://digitalcommons.kennesaw.edu/cgi/viewcontent.cgi?article=1197&context=cday" target="_blank" rel="noopener">
+                Poster PDF
+              </a>
+            </div>
+          </article>
+
+          <article class="publication-card reveal">
+            <div class="publication-header">
+              <div>
+                <p class="feature-tag">C-Day Poster</p>
+                <h3>UC-236 Energy Crisis 1994</h3>
+              </div>
+              <span class="status-pill muted">2022</span>
+            </div>
+
+            <p class="citation-line">
+              Mason T. Prather | Kennesaw State University C-Day Computing Showcase | April 28, 2022
+            </p>
+
+            <p class="publication-summary">
+              A poster for the multiplayer FPS project Energy Crisis 1994, presenting a 4v4 role-based format built
+              around objective play and distinct character roles. It captured an early public version of my
+              multiplayer design thinking before the project expanded into a larger capstone effort.
+            </p>
+
+            <ul class="feature-points">
+              <li>Presented a class-based multiplayer FPS with objective-driven modes.</li>
+              <li>Drew from Team Fortress 2, Overwatch, and Counter-Strike for structure and pacing.</li>
+              <li>Shows the overlap between my research presentation work and game development practice.</li>
+            </ul>
+
+            <div class="publication-links">
+              <a class="text-link" href="https://digitalcommons.kennesaw.edu/cday/Spring_2022/Undergraduate_Capstone/20/" target="_blank" rel="noopener">
+                Abstract Page
+              </a>
+              <a class="text-link" href="https://digitalcommons.kennesaw.edu/cgi/viewcontent.cgi?article=1216&context=cday" target="_blank" rel="noopener">
+                Poster PDF
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Achievements and Recognition</p>
+          <h2>Research momentum, academic recognition, and public-facing work.</h2>
+        </div>
+
+        <div class="card-grid two-up">
+          <article class="achievement-card reveal">
+            <h3>Awards</h3>
+            <ul class="achievement-list">
+              <li>C-Day 2022 - 1st Place for undergraduate capstone work</li>
+              <li>Dean's List - Spring 2022</li>
+              <li>Dean's List - Fall 2024</li>
+            </ul>
+          </article>
+
+          <article class="achievement-card reveal">
+            <h3>Presentations and Ongoing Research</h3>
+            <ul class="achievement-list">
+              <li>Published in IEEE VRW 2025 and continuing conference-facing XR research work</li>
+              <li>Presented award-winning capstone posters at KSU C-Day 2022</li>
+              <li>Presented XR/VR projects at Atlanta Science Festival 2024</li>
+              <li>M.S. thesis in progress on VR lecture attention and quiz interventions</li>
+              <li>Continuing to build research-backed XR experiences in therapeutic, educational, and presentation-focused settings</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="shell contact-grid">
+        <div class="contact-copy reveal">
+          <p class="section-kicker">Contact</p>
+          <h2>Open to conversations about XR, games, research, and thoughtful technical work.</h2>
+          <p>
+            If you're building immersive experiences, interactive prototypes, or software that benefits from both
+            creative thinking and engineering discipline, I'd be glad to connect.
+          </p>
+        </div>
+
+        <div class="contact-cards">
+          <article class="contact-card reveal">
+            <p class="panel-label">Email</p>
+            <a href="mailto:mdawg81400@gmail.com">mdawg81400@gmail.com</a>
+            <a href="mailto:mprath10@students.kennesaw.edu">mprath10@students.kennesaw.edu</a>
+            <a href="mailto:mason.prather@opexsystems.com">mason.prather@opexsystems.com</a>
+          </article>
+
+          <article class="contact-card reveal">
+            <p class="panel-label">Direct</p>
+            <a href="tel:+16786809744">+1 (678) 680-9744</a>
+            <a href="https://github.com/MasonPrather" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/masonprather/" target="_blank" rel="noopener">LinkedIn</a>
+          </article>
+
+          <article class="contact-card reveal">
+            <p class="panel-label">Resume</p>
+            <a href="documents/Mason Prather Resume.pdf" target="_blank" rel="noopener">Open PDF resume</a>
+            <p class="contact-note">Static-site friendly and ready for GitHub Pages deployment.</p>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="wrap">
-    <div>© <span id="y"></span> Mason Prather. All rights reserved.</div>
-    <div class="small">Last updated: <span id="last-updated"></span></div>
+  <footer class="site-footer">
+    <div class="shell footer-shell">
+      <p>Mason Prather</p>
+      <p>XR/Game Developer | Software Engineer | Research Builder</p>
+      <p>Copyright <span id="year"></span></p>
+    </div>
   </footer>
 
-  <script>
-    // Footer year and last updated
-    document.getElementById('y').textContent = new Date().getFullYear();
-    document.getElementById('last-updated').textContent = new Date().toLocaleDateString();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
