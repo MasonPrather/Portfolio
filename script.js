@@ -36,8 +36,8 @@ const revealObserver = new IntersectionObserver(
   },
   {
     threshold: 0.18,
-    rootMargin: "0px 0px -48px 0px"
-  }
+    rootMargin: "0px 0px -48px 0px",
+  },
 );
 
 revealItems.forEach((item) => revealObserver.observe(item));
@@ -61,8 +61,8 @@ const sectionObserver = new IntersectionObserver(
   },
   {
     threshold: 0.35,
-    rootMargin: "-20% 0px -45% 0px"
-  }
+    rootMargin: "-20% 0px -45% 0px",
+  },
 );
 
 sections.forEach((section) => sectionObserver.observe(section));
