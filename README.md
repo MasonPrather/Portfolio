@@ -1,35 +1,61 @@
 ## About Me
-- Hi, I’m Mason Prather! I like video games and movies. You'll usually find me either writing code or sleeping.
+
+Hi, I’m Mason Prather — an XR/VR developer, software engineer, research engineer, and game developer focused on building interactive systems, immersive experiences, and gameplay-driven applications.
+
+My work sits at the intersection of game development, virtual reality, multiplayer systems, research software, and applied engineering. I am especially interested in projects that combine strong technical systems with creative, memorable user experiences.
 
 ## Interests
-- I am interested in game development, particularly in the realms of online multiplayer games, horror games, and VR games.
-- As a 6-year-participant, I formerly involved myself with competitive esports (Overwatch 2) at the collegiate and Tier 3 skill level.
+
+- Game development, especially online multiplayer games, horror games, VR/XR experiences, and experimental gameplay systems
+- XR research applications, including therapy, training, education, simulation, and embodied interaction
+- Competitive game design, player experience, and esports-centered software tools
+- Applied software engineering, real-time systems, networking, and interactive application development
+
+I also have six years of competitive esports experience in Overwatch 2, including collegiate and Tier 3-level participation.
 
 ## Education
-- I have completed my degree at Kennesaw State University, a Bachelor of Science in Computer Game Design & Development, studying VR game development.
-- I am currently attending Kennesaw State University again for a Masters of Science in Software Engineering.
+
+- **M.S. in Software Engineering** — Kennesaw State University  
+- **B.S. in Computer Game Design & Development** — Kennesaw State University  
+  - Focused on game development, VR development, interactive systems, and gameplay programming
 
 ## Collaboration
-- I’m looking to collaborate on any volunteer projects or upcoming indie games.
+
+I am open to collaborating on indie games, XR/VR applications, research-driven software, gameplay prototypes, and technically ambitious interactive projects.
 
 ## Skills
-- Game Development: Unity, Unreal Engine, Godot
-- Programming Languages: C++, C#, Python, Java, C, SQL, Rust, P4
-- XR Development: Meta Quest 2/Pro, HTC Vive, Windows Mixed Reality, PC, Mobile, PS4
-- Genre Experience: First-Person Shooters, Mobile/Casual, Puzzle, Horror, Virtual Reality
+
+- **Game Engines:** Unity, Unreal Engine, Godot
+- **Programming Languages:** C++, C#, Python, Java, C, SQL, Rust, P4
+- **XR/VR Development:** Meta Quest 2/Pro, HTC Vive, Windows Mixed Reality, PC VR, mobile VR
+- **Development Areas:** Gameplay programming, multiplayer systems, VR interaction, UI systems, research applications, prototyping, technical design
+- **Genre Experience:** First-person shooters, horror, puzzle games, casual/mobile games, virtual reality, multiplayer games
 
 ## Project Showcase
-- [Energy Crisis 1994]([link1](https://github.com/MasonPrather/EC94)): An online multiplayer 4-vs-4 team shooter. Inspired by Overwatch and Team Fortress 2. Features 3 game modes and 12 playable fighters (3 per role).
-- Scooter Coin: A VR game for HTC Vive and Meta Quest 2. An arcade-style game featuring posture-influenced game mechanics. As the name suggests, this game seats the player aboard an automated scooter that varies speed based on your posture. Collect as many coins as possible before time expires!
-- EyeTrackingAttentionTraining: A VR game for HTC Vive. Utilized by KSU for a research study in Spring 2023, this game is a simulation of a classroom environment. The objective of the study is to analyze the behavioral changes in ASD subjects when subjected to various attention training methods. Utilizes Eye Tracking functionality of the HTC Vive Pro Eye.
-- Schwer: A VR game for HTC vive. Utilized in a KSU research study, this game takes the player on a journey of self-worth and reflection. Navigate puzzles and meet mysterious creatures as you traverse this dull land in search of your purpose.
-- Cyber Attack Escape: A VR game for Meta Quest 2. Hop aboard the ship, it's time to train yourself for the world of cybersecurity. A space game that features 5 distinct minigames all about learning cybersecurity standards and concepts.
-- No Witness: An asymmetrical 3 vs 1 multiplayer horror game. (In Progress)
-- Vindication: Horror solo experience. (Planned)
-- [List of Works](https://docs.google.com/document/d/1eRs2Emx--UXADss7329RI6TzBe8novJlfhP2RlGkOQc/edit?usp=sharing)
-   
+
+### [Energy Crisis 1994](https://github.com/MasonPrather/EC94)
+An online multiplayer 4-vs-4 team shooter inspired by games like Overwatch and Team Fortress 2. The project features multiple game modes, role-based team composition, and a roster of 12 playable fighters.
+
+### Scooter Coin
+A VR arcade-style game for HTC Vive and Meta Quest 2 featuring posture-influenced gameplay mechanics. The player rides an automated scooter that changes speed based on their posture while collecting as many coins as possible before time expires.
+
+### EyeTrackingAttentionTraining
+A VR classroom simulation for HTC Vive Pro Eye developed for a KSU research study. The project uses eye-tracking functionality to support attention training research and study behavioral responses in a classroom-style virtual environment.
+
+### Schwer
+A VR research experience for HTC Vive focused on reflection, self-worth, and emotional exploration. Players navigate puzzles, encounter mysterious creatures, and travel through a quiet, symbolic world in search of purpose.
+
+### Cyber Attack Escape
+A VR cybersecurity training game for Meta Quest 2. The experience places players aboard a space-themed training environment with five distinct minigames designed to teach cybersecurity concepts and standards.
+
+### No Witness
+An asymmetrical 3-vs-1 multiplayer horror game currently in development.
+
+### Vindication
+A planned solo horror experience focused on atmosphere, tension, and narrative-driven gameplay.
+
 ## Contact Me
-- How to reach me:
-  - Personal Email: mdawg81400@gmail.com
-  - School Email: mprath10@students.kennesaw.edu
-  - Work Email: mason.prather@opexsystems.com
+
+- **Personal Email:** mdawg81400@gmail.com
+- **School Email:** mprath10@students.kennesaw.edu
+- **Work Email:** mason.prather@opexsystems.com
