@@ -647,8 +647,9 @@ p.section-kicker {
   display: grid;
   grid-template-columns: minmax(0, 1.18fr) minmax(230px, 0.82fr) minmax(230px, 0.82fr);
   grid-template-areas:
-    "spotlight contest pipeline"
-    "spotlight telemetry cloudxr";
+    "cloudxr cloudxr cloudxr"
+    "spotlight contest telemetry"
+    "spotlight contest pipeline";
   gap: 14px;
   align-items: stretch;
 }
@@ -849,6 +850,70 @@ p.section-kicker {
 
 .feature-card-cloudxr {
   grid-area: cloudxr;
+  grid-template-columns: minmax(0, 0.78fr) minmax(300px, 1.22fr);
+  align-items: stretch;
+  align-content: stretch;
+  border-color: rgba(166, 156, 255, 0.28);
+}
+
+.feature-card-cloudxr .feature-header,
+.feature-card-cloudxr h3,
+.feature-card-cloudxr > p,
+.feature-card-cloudxr .stack-list {
+  grid-column: 1;
+}
+
+.cloudxr-media-grid {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  min-height: 190px;
+}
+
+.cloudxr-image-slot {
+  position: relative;
+  min-height: 180px;
+  overflow: hidden;
+  border: 1px dashed rgba(202, 222, 214, 0.24);
+  border-radius: var(--radius-sm);
+  background:
+    linear-gradient(135deg, rgba(166, 156, 255, 0.16), transparent 38%),
+    linear-gradient(210deg, rgba(87, 228, 214, 0.14), transparent 46%),
+    linear-gradient(180deg, rgba(9, 18, 16, 0.86), rgba(4, 10, 9, 0.94));
+}
+
+.cloudxr-image-slot::before,
+.cloudxr-image-slot::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border-radius: calc(var(--radius-sm) - 2px);
+  pointer-events: none;
+}
+
+.cloudxr-image-slot::before {
+  background-image:
+    linear-gradient(rgba(243, 248, 245, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(243, 248, 245, 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.cloudxr-image-slot::after {
+  border: 1px solid rgba(87, 228, 214, 0.18);
+  box-shadow:
+    inset 0 0 28px rgba(87, 228, 214, 0.08),
+    0 0 22px rgba(166, 156, 255, 0.08);
+}
+
+.cloudxr-image-slot img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
 }
 
 .feature-header {
@@ -1222,9 +1287,10 @@ p.feature-tag {
   .feature-layout {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-areas:
-      "spotlight spotlight"
-      "contest pipeline"
-      "telemetry cloudxr";
+      "cloudxr cloudxr"
+      "spotlight contest"
+      "spotlight telemetry"
+      "pipeline pipeline";
   }
 
   .capability-grid {
@@ -1293,6 +1359,23 @@ p.feature-tag {
   .video-card-grid.two-up {
     grid-template-columns: 1fr;
   }
+
+  .feature-card-cloudxr {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card-cloudxr .feature-header,
+  .feature-card-cloudxr h3,
+  .feature-card-cloudxr > p,
+  .feature-card-cloudxr .stack-list,
+  .cloudxr-media-grid {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .cloudxr-media-grid {
+    min-height: 160px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1345,11 +1428,20 @@ p.feature-tag {
 
   .feature-layout {
     grid-template-areas:
+      "cloudxr"
       "spotlight"
       "contest"
-      "pipeline"
       "telemetry"
-      "cloudxr";
+      "pipeline";
+  }
+
+  .cloudxr-media-grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .cloudxr-image-slot {
+    min-height: 132px;
   }
 
   .demo-grid {
