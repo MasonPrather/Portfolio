@@ -1,2 +1,5 @@
 *.mov filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+
+# Small, optimized portfolio videos must be served directly by GitHub Pages.
+images/projects/*.mp4 -filter -diff -merge -text
