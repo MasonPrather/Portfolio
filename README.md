@@ -1,61 +1,45 @@
-## About Me
+# Mason Prather — Portfolio
 
-Hi, I’m Mason Prather — an XR/VR developer, software engineer, research engineer, and game developer focused on building interactive systems, immersive experiences, and gameplay-driven applications.
+Personal portfolio for Mason Prather, an XR/VR developer, software engineer, research engineer, game developer, and founder of Prather Software. The site brings together independent projects, collaborative games, and research engineering work.
 
-My work sits at the intersection of game development, virtual reality, multiplayer systems, research software, and applied engineering. I am especially interested in projects that combine strong technical systems with creative, memorable user experiences.
+[View the portfolio](https://masonprather.github.io/Portfolio/) · [Prather Software](https://prathersoftware.com/) · [GitHub](https://github.com/MasonPrather) · [LinkedIn](https://www.linkedin.com/in/masonprather/)
 
-## Interests
+## Run locally
 
-- Game development, especially online multiplayer games, horror games, VR/XR experiences, and experimental gameplay systems
-- XR research applications, including therapy, training, education, simulation, and embodied interaction
-- Competitive game design, player experience, and esports-centered software tools
-- Applied software engineering, real-time systems, networking, and interactive application development
+This is a buildless website using HTML, CSS, and JavaScript. No dependency installation or build step is required.
 
-I also have six years of competitive esports experience in Overwatch 2, including collegiate and Tier 3-level participation.
+From the repository root:
 
-## Education
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+```
 
-- **M.S. in Software Engineering** — Kennesaw State University  
-- **B.S. in Computer Game Design & Development** — Kennesaw State University  
-  - Focused on game development, VR development, interactive systems, and gameplay programming
+Open [the local preview](http://127.0.0.1:4173/). GitHub Pages serves the files directly from the repository.
 
-## Collaboration
+## Selected recent work
 
-I am open to collaborating on indie games, XR/VR applications, research-driven software, gameplay prototypes, and technically ambitious interactive projects.
+- **Promenade** — An independent mobile party game in development, with six minigames.
+- **Quest Theater** — A private Unity/Android prototype exploring Quest media viewing with PhairPlay.
+- **Rick Dangerman Remastered** — An independent remaster of a university team game originally created by Mason Prather, Cameron Stevenson, Hayden Rhodus, and Patrick Reyman.
+- **MultiUserFullBody** — Collaborative VR research under Dr. Lei Zhang, including avatar interaction, shared media, and research-facing workflows.
+- **Prather Software** — Mason's software company and its [company website](https://prathersoftware.com/).
+- **Floor 13** — A collaborative game concept in the design stage.
 
-## Skills
+Research and professional work also includes Wind Phone Therapy, IEEE VR 3DUI collaborations, programmable-network telemetry, and technical visualization. Earlier work remains accessible through the site, including Energy Crisis 1994, Scooter Coin, eye-tracking attention training, Schwer, Cyber Attack Escape, A Wake in the Dark, KSU VR Classroom, and The Agile Pursuit.
 
-- **Game Engines:** Unity, Unreal Engine, Godot
-- **Programming Languages:** C++, C#, Python, Java, C, SQL, Rust, P4
-- **XR/VR Development:** Meta Quest 2/Pro, HTC Vive, Windows Mixed Reality, PC VR, mobile VR
-- **Development Areas:** Gameplay programming, multiplayer systems, VR interaction, UI systems, research applications, prototyping, technical design
-- **Genre Experience:** First-person shooters, horror, puzzle games, casual/mobile games, virtual reality, multiplayer games
+## Approach
 
-## Project Showcase
+Mason directs the design and engineering work, using Codex to assist with implementation, investigation, and iteration. Manual integration, hands-on development, testing, and collaborator feedback remain part of the process. Project descriptions distinguish personal contributions from shared work and concepts from working prototypes. He also works with agentic AI workflows, machine-learning model training, and model integration.
 
-### [Energy Crisis 1994](https://github.com/MasonPrather/EC94)
-An online multiplayer 4-vs-4 team shooter inspired by games like Overwatch and Team Fortress 2. The project features multiple game modes, role-based team composition, and a roster of 12 playable fighters.
+Mason holds an M.S. in Software Engineering and a B.S. in Computer Game Design & Development from Kennesaw State University.
 
-### Scooter Coin
-A VR arcade-style game for HTC Vive and Meta Quest 2 featuring posture-influenced gameplay mechanics. The player rides an automated scooter that changes speed based on their posture while collecting as many coins as possible before time expires.
+## Maintenance
 
-### EyeTrackingAttentionTraining
-A VR classroom simulation for HTC Vive Pro Eye developed for a KSU research study. The project uses eye-tracking functionality to support attention training research and study behavioral responses in a classroom-style virtual environment.
+- `index.html` contains project descriptions, attribution, experience, media, and metadata.
+- `styles.css` defines the visual design and responsive layouts; `script.js` provides progressive enhancements.
+- The portrait uses `images/mason-prather.jpg` and its smaller `images/mason-prather-640.jpg` variant. Update both together and keep image descriptions and social metadata in sync.
+- The current MUFB demo is `images/projects/mufb-avatars-2026-11-03.mp4`, with a matching poster. Keep new showcase videos web-optimized and label recording dates.
+- Keep project roles, collaborator credits, and development status accurate. Do not describe concepts or prototypes as released products, or link private source repositories.
+- Check desktop and mobile layouts, keyboard navigation, local assets, and project links after changes. Keep earlier demos and the resume accessible.
 
-### Schwer
-A VR research experience for HTC Vive focused on reflection, self-worth, and emotional exploration. Players navigate puzzles, encounter mysterious creatures, and travel through a quiet, symbolic world in search of purpose.
-
-### Cyber Attack Escape
-A VR cybersecurity training game for Meta Quest 2. The experience places players aboard a space-themed training environment with five distinct minigames designed to teach cybersecurity concepts and standards.
-
-### No Witness
-An asymmetrical 3-vs-1 multiplayer horror game currently in development.
-
-### Vindication
-A planned solo horror experience focused on atmosphere, tension, and narrative-driven gameplay.
-
-## Contact Me
-
-- **Personal Email:** mdawg81400@gmail.com
-- **School Email:** mprath10@students.kennesaw.edu
-- **Work Email:** mason.prather@opexsystems.com
+Contact: [mdawg81400@gmail.com](mailto:mdawg81400@gmail.com).
