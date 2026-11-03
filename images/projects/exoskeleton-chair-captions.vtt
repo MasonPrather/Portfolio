@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.000
+In virtual reality, posture affects comfort, immersion, and performance.
+Most experiences assume you are either sitting or standing.
+
+00:00:08.000 --> 00:00:18.000
+But what if posture support allowed natural transitions between both?
+We explored this using a passive lower-body exoskeleton chair designed to support seated-to-standing movement in VR.
+
+00:00:18.000 --> 00:00:30.000
+Participants completed a Unity-based scooter task where posture controlled speed while collecting coins in an immersive environment.
+Three conditions were compared: seated, unsupported standing, and exoskeleton-supported posture.
+
+00:00:30.000 --> 00:00:42.000
+Standing increased physical load and fatigue.
+Seated posture improved performance and reduced nausea.
+
+00:00:42.000 --> 00:00:54.000
+The exoskeleton reduced fatigue compared to standing,
+but revealed a trade-off between comfort and sensory stability.
+
+00:00:54.000 --> 00:01:02.000
+These findings raise important design questions for embodied virtual reality systems.
+Visit us at Booth P-247 to learn more.

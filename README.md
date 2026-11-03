@@ -21,17 +21,22 @@ Open [the local preview](http://127.0.0.1:4173/). GitHub Pages serves the files 
 - **Promenade** — An independent mobile party game in development, with six minigames.
 - **Quest Theater** — A private Unity/Android prototype exploring Quest media viewing with PhairPlay.
 - **Rick Dangerman Remastered** — An independent remaster of a university team game originally created by Mason Prather, Cameron Stevenson, Hayden Rhodus, and Patrick Reyman.
-- **MultiUserFullBody** — Collaborative VR research under Dr. Lei Zhang, including avatar interaction, shared media, and research-facing workflows.
+- **Shared Presence VR** — Collaborative VR research under Dr. Lei Zhang, including avatar interaction, shared media, and research-facing workflows.
 - **Prather Software** — Mason's software company and its [company website](https://prathersoftware.com/).
 - **Floor 13** — A collaborative game concept in the design stage.
 
-Research and professional work also includes Wind Phone Therapy, IEEE VR 3DUI collaborations, programmable-network telemetry, and technical visualization. Earlier work remains accessible through the site, including Energy Crisis 1994, Scooter Coin, eye-tracking attention training, Schwer, Cyber Attack Escape, A Wake in the Dark, KSU VR Classroom, and The Agile Pursuit.
+Research and professional work also includes Wind Phone Therapy, IEEE VR 3DUI collaborations, programmable-network telemetry, and technical visualization. Earlier work remains accessible through the site, including Energy Crisis 1994, Scooter Coin, eye-tracking attention training, Schwer, Cyber Attack Escape, A Wake in the Dark, and The Agile Pursuit.
+
+## Featured research
+
+- **Attention-Aware VR Classroom** — M.S. thesis, [Effectiveness of Quiz-Based Interventions in Virtual Reality Lectures on Learning](https://digitalcommons.kennesaw.edu/masterstheses/126/). Unreal Engine/C++ lecture orchestration, gaze-based attention, quiz interaction, and study logging, with an [earlier prototype demo](https://www.youtube.com/watch?v=bzMv0_jSebk).
+- **Exoskeleton Chair in VR** — First-author research with Sungchul Jung, [Use of Exoskeleton Chair for Supporting Posture Change in VR Experience](https://doi.org/10.1109/VRW70859.2026.00260), IEEE VR 2026. The site includes the submitted poster teaser and English captions.
 
 ## Approach
 
 Mason directs the design and engineering work, using Codex to assist with implementation, investigation, and iteration. Manual integration, hands-on development, testing, and collaborator feedback remain part of the process. Project descriptions distinguish personal contributions from shared work and concepts from working prototypes. He also works with agentic AI workflows, machine-learning model training, and model integration.
 
-Mason holds an M.S. in Software Engineering and a B.S. in Computer Game Design & Development from Kennesaw State University.
+Mason holds an M.S. in Software Engineering and a B.S. in Computer Game Design & Development from Kennesaw State University. The M.S. was conferred in May 2026; its [public diploma record](https://www.parchment.com/lp/award/9b50be71-f760-4f31-91ea-79736b276df1) is linked from Education.
 
 ## Maintenance
 
