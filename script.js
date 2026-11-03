@@ -68,3 +68,25 @@ document.querySelectorAll('.demo-details').forEach(details => {
     });
   });
 });
+
+
+// Keep the thesis demo on the page, loading the player after a play request.
+document.querySelectorAll('button[data-video-id]').forEach(button => {
+  button.addEventListener('click', () => {
+    const videoId = button.dataset.videoId;
+    if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) return;
+
+    const frame = document.createElement('iframe');
+    frame.title = button.dataset.videoTitle || 'Project demo';
+    frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&playsinline=1&rel=0`;
+    frame.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share';
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    frame.allowFullscreen = true;
+
+    const player = document.createElement('div');
+    player.className = 'video-frame';
+    player.append(frame);
+    button.replaceWith(player);
+    frame.focus();
+  });
+});

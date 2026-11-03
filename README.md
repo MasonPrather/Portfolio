@@ -20,7 +20,7 @@ Open [the local preview](http://127.0.0.1:4173/). GitHub Pages serves the files 
 
 - **Promenade** — An independent mobile party game in development, with six minigames.
 - **Quest Theater** — A private Unity/Android prototype exploring Quest media viewing with PhairPlay.
-- **Rick Dangerman Remastered** — An independent remaster of a university team game originally created by Mason Prather, Cameron Stevenson, Hayden Rhodus, and Patrick Reyman.
+- **Rick Dangerman Remastered** — A single-player run-and-gun game inspired by Call of Duty Zombies, remastering the university project originally created by Mason Prather, Cameron Stevenson, Hayden Rhodus, and Patrick Reyman.
 - **Shared Presence VR** — Collaborative VR research under Dr. Lei Zhang, including avatar interaction, shared media, and research-facing workflows.
 - **Prather Software** — Mason's software company and its [company website](https://prathersoftware.com/).
 - **Floor 13** — A collaborative game concept in the design stage.
@@ -41,6 +41,8 @@ Mason holds an M.S. in Software Engineering and a B.S. in Computer Game Design &
 ## Maintenance
 
 - `index.html` contains project descriptions, attribution, experience, media, and metadata.
+- The site résumé is `documents/Mason Prather Master Resume.pdf`; its editable source is the matching `.docx`. Update both together.
+- OPEX employment ended in July 2026; Prather Software began in November 2026.
 - `styles.css` defines the visual design and responsive layouts; `script.js` provides progressive enhancements.
 - The portrait uses `images/mason-prather.jpg` and its smaller `images/mason-prather-640.jpg` variant. Update both together and keep image descriptions and social metadata in sync.
 - The current MUFB demo is `images/projects/mufb-avatars-2026-11-03.mp4`, with a matching poster. Keep new showcase videos web-optimized and label recording dates.

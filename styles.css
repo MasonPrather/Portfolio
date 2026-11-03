@@ -292,8 +292,6 @@ details[open] > summary .detail-meta > span { transform: rotate(45deg); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
-.research-context { max-width: 900px; font-size: 14px; margin-bottom: 40px; }
-.research-context .text-link { display: inline; line-height: inherit; font-size: inherit; text-decoration: underline; text-underline-offset: 4px; }
 .video-fallback { font-size: 10px; margin-top: 0 !important; }
 
 .research-highlights { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 36px; margin-bottom: 52px; }
@@ -307,7 +305,7 @@ details[open] > summary .detail-meta > span { transform: rotate(45deg); }
 @media (max-width: 1100px) { .research-highlights { gap: 24px; } }
 @media (max-width: 650px) { .research-highlights { grid-template-columns: 1fr; gap: 28px; margin-bottom: 36px; } }
 
-.thesis-video-link { display: block; position: relative; aspect-ratio: 16/9; overflow: hidden; }
+.thesis-video-link { display: block; position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; padding: 0; border: 0; background: #050b10; }
 .thesis-video-link img { width: 100%; height: 100%; object-fit: cover; opacity: .8; transition: opacity .2s; }
 .thesis-video-link:hover img { opacity: 1; }
 .demo-play { display: grid; place-items: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 60px; height: 60px; border-radius: 50%; background: var(--accent); color: var(--bg); font-size: 18px; padding-left: 3px; box-shadow: 0 4px 24px #0007; }
@@ -316,3 +314,15 @@ details[open] > summary .detail-meta > span { transform: rotate(45deg); }
 .education-degree { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 24px; margin-bottom: 12px; }
 .degree-note { font: 10px/1.8 var(--mono); color: var(--muted); }
 .education-degree .text-link { font-size: 11px; }
+
+.company-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 6px; }
+.side-projects .company-heading h3 { margin-top: 0; }
+.company-logo { display: block; position: relative; isolation: isolate; flex: none; width: 148px; padding: 6px 8px; background: transparent; }
+.company-logo img { width: 100%; height: auto; aspect-ratio: 4.9; object-fit: cover; object-position: center; }
+
+.work-copy > .demo-details { width: 100%; margin-top: 16px; }
+.work-copy .demo-details > summary { min-height: 64px; font-size: 12px; }
+.work-copy .demo-details .detail-meta { gap: 12px; }
+.work-copy .demo-grid { grid-template-columns: 1fr; gap: 24px; padding-bottom: 20px; }
+
+.company-logo::before { content: ""; position: absolute; inset: -10px -20px; z-index: -1; background: radial-gradient(ellipse, rgba(178,232,213,.95) 0%, rgba(121,208,171,.46) 48%, transparent 76%); filter: blur(8px); pointer-events: none; }
